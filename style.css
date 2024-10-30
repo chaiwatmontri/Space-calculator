@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width:1023px){
+    body{
+        background: url(img/Bg1.png);
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100vw;
+        height: 100vh;
+        padding: 10vh 30vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    .cal{
+        background-color: rgba(102, 101, 101,0.54);
+        color:rgb(255, 255, 255) ;
+        box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+
+        width: 40vw;
+        height: 80vh;
+        padding: 20px;
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 30px;
+    }
+    .screen{
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 36vw;
+        height: 15vh;
+        border-radius: 30px;
+        margin: 3.5vh 0;
+    }
+    .button{
+        width: 36vw;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .input{
+        display: block;
+        background-color: rgba(0, 0, 0, 0.4);
+        color:rgb(255, 255, 255) ;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+        border-radius: 30px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        font-size: 40px;
+    }
+}
+
+@media (min-width:320px) and (max-width:1023px){
+    body{
+        background: url(img/Bg2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100vw;
+        height: 100vh;
+        padding: 10vh 10vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .cal{
+        background-color: rgba(102, 101, 101,0.54);
+        color:rgb(255, 255, 255) ;
+        box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+
+        width: 80vw;
+        height: 80vh;
+        padding: 20px;
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 30px;
+    }
+
+    .screen{
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 70vw;
+        height: 15vh;
+        border-radius: 30px;
+        margin: 3.5vh 0;
+    }
+
+    .button{
+        width: 70vw;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .input{
+        display: block;
+        background-color: rgba(0, 0, 0, 0.4);
+        color:rgb(255, 255, 255) ;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+        border-radius: 30px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        font-size: 20px;
+    }
+}
+
+.input:hover{
+    animation: shadow 3s infinite;
+    box-shadow: 0 0 10px 2px rgb(255, 255, 255);
+}
+.input:active{
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+}
+.input:nth-child(16) {
+    grid-column: span 2; /* ทำให้ปุ่ม "0" กินพื้นที่ 2 ช่อง */
+}
+@keyframes shadow{
+    0%{
+        box-shadow: 0 0 10px 2px rgb(255, 255, 255);
+    }
+    20%{
+        box-shadow: 0 0 10px 2px #ecdcab;
+    }
+    40%{
+        box-shadow: 0 0 10px 2px #dfc578;
+    }
+    60%{
+        box-shadow: 0 0 10px 2px #dfc578;
+    }
+    80%{
+        box-shadow: 0 0 10px 2px #ecdcab;
+    }
+    100%{
+        box-shadow: 0 0 10px 2px rgb(255, 255, 255);
+    }
+}
